@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cheatsheet</title>
+   <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+   <h1>Cheatsheet for custom properties in css</h1>
+   <p>To setup custom properties in CSS, use the code below:</p>
+   <code><span class="selector">:root</span> {<br>
+      &nbsp;&nbsp;<span class="property">--my-color</span>: red;<br>
+   }<br>
+   <span class="selector">.item-to-style</span> {<br>
+      &nbsp;&nbsp;<span class="property">color</span>: var(--my-color);<br>
+   }</code>
+   <table>
+      <thead>
+         <tr>
+            <th>Example use cases</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Set the color theme for a page at the very top of the css file so when you want to make changes, the
+               relevant code can be quickly found and edited.</td>
+         </tr>
+         <tr>
+            <td>Use the same properties for multiple places and have the ability to change the property in one place for
+               all of the elements.</td>
+         </tr>
+      </tbody>
+   </table>
+</body>
+
+</html>
